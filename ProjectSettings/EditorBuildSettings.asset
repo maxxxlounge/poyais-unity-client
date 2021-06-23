@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: d0cf881bc40a24e2cb7eb52ad5872cf6
+  - enabled: 1
+    path: Assets/Main.unity
+    guid: 9d367b8e2c74048c8a403e73a7c1fb40
+  - enabled: 0
+    path: Assets/TouchInputTest.unity
+    guid: 3e7f30876c6f445cc94246441f4fb568
+  m_configObjects: {}

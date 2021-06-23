@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Net.WebSockets;
+
+using UnityEngine;
+
+public class Connector : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        Time.timeScale = 1.0f;
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

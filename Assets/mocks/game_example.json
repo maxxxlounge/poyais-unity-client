@@ -1,0 +1,233 @@
+{
+    "Players": [
+        {
+            "ID": "",
+            "UUID": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Name": "",
+            "X": 664.328797000976,
+            "Y": 621.9801199619401,
+            "Left": false,
+            "Right": true,
+            "Up": false,
+            "Down": true,
+            "Acceleration": 1.5,
+            "Velocity": 1,
+            "Rotation": 3.9269908169872414,
+            "Life": 10,
+            "Power": 1,
+            "ReloadTime": 16,
+            "Status": "WaitForPlay",
+            "Score": 0,
+            "You": false
+        },
+        {
+            "ID": "",
+            "UUID": "1777e1c6-d3a8-4288-9fbc-66baa762a8ef",
+            "Name": "",
+            "X": 67.21230767869565,
+            "Y": 120.20678763478367,
+            "Left": false,
+            "Right": false,
+            "Up": false,
+            "Down": false,
+            "Acceleration": 1.5,
+            "Velocity": 1,
+            "Rotation": 1.5707963267948966,
+            "Life": 10,
+            "Power": 1,
+            "ReloadTime": 50,
+            "Status": "WaitForPlay",
+            "Score": 0,
+            "You": false
+        }
+    ],
+    "Bullets": [
+        {
+            "X": 709.828797000976,
+            "Y": 576.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 706.328797000976,
+            "Y": 579.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 700.828797000976,
+            "Y": 585.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 698.828797000976,
+            "Y": 587.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 696.328797000976,
+            "Y": 589.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 694.328797000976,
+            "Y": 591.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 692.328797000976,
+            "Y": 593.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 688.828797000976,
+            "Y": 597.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 687.328797000976,
+            "Y": 598.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 684.828797000976,
+            "Y": 601.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 678.828797000976,
+            "Y": 607.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 678.828797000976,
+            "Y": 607.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 676.828797000976,
+            "Y": 609.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 674.828797000976,
+            "Y": 611.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 671.328797000976,
+            "Y": 614.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 669.328797000976,
+            "Y": 616.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 667.328797000976,
+            "Y": 618.9801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        },
+        {
+            "X": 665.828797000976,
+            "Y": 620.4801199619401,
+            "Owner": "646f4249-740a-43fb-ae2d-426622e6e912",
+            "Rotation": 3.9269908169872414,
+            "Damage": 1,
+            "Speed": 2,
+            "Exhausted": false
+        }
+    ],
+    "Status": "",
+    "You": {
+        "ID": "",
+        "UUID": "1777e1c6-d3a8-4288-9fbc-66baa762a8ef",
+        "Name": "",
+        "X": 67.21230767869565,
+        "Y": 120.20678763478367,
+        "Left": false,
+        "Right": false,
+        "Up": false,
+        "Down": false,
+        "Acceleration": 1.5,
+        "Velocity": 1,
+        "Rotation": 1.5707963267948966,
+        "Life": 10,
+        "Power": 1,
+        "ReloadTime": 50,
+        "Status": "WaitForPlay",
+        "Score": 0,
+        "You": false
+    },
+    "Bounds": {
+        "Width": 1024,
+        "Height": 768
+    }
+}
