@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Alli son of Glonli",
+        "type": "human",
+        "state": "WalkingToTavern",
+        "position": [
+            89.44384510203349,
+            89.44384510203349
+        ],
+        "heading": [
+            0.7071067811865475,
+            0.7071067811865475
+        ]
+    }
+]

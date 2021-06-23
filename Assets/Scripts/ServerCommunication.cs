@@ -11,11 +11,9 @@ public class ServerCommunication : MonoBehaviour
     private string log;
     private bool logVisible = true;
     private string gameStatus="connecting";
-    private Touch theTouch;
     private GameModel game;
-    public GameObject Ship;
-    public GameObject Arrow;
-    public GameObject BulletPrefab ;
+    public GameObject TavernTemplate;
+    public GameObject DwarfTemplate;
     public GameObject GameObjectContainer ;
     public string status;
     public string PlayerName;
@@ -24,10 +22,6 @@ public class ServerCommunication : MonoBehaviour
     const float screenWidth = 1020;
     const float screenHeight = 763;
     private bool clientconnected = false;
-    private string skinName;
-    private Sprite skin;
-    public Sprite[] skins =  new Sprite[4];
-
 
     private bool isPaused = false;
     // Server IP address
@@ -36,7 +30,7 @@ public class ServerCommunication : MonoBehaviour
 
     // Server port
     [SerializeField]
-    private int port = 8888;
+    private int port = 3000;
 
     // Flag to use localhost
     [SerializeField]
@@ -113,9 +107,11 @@ public class ServerCommunication : MonoBehaviour
         if (client.GetState()=="Closed"){
             return;
         }
+
         log= "server connected";
         var cqueue = client.receiveQueue;
         string msg;
+
         while (cqueue.TryPeek(out msg))
         {
             cqueue.TryDequeue(out msg);
@@ -144,28 +140,15 @@ public class ServerCommunication : MonoBehaviour
             SendRequest("setup|"+ PlayerName);
             namesent=true;
         }
-        //Debug.Log("Server: " + msg);
-        game =  GameModel.CreateFromJSON(msg);
-        if (game != null ){
+        
+        Debug.Log("Server: " + msg);
+
+        GameElement[] ggee =  GameModel.CreateFromJSON(msg);
+        if (ggee != null ){
             clientconnected = true;
         }
-        //log = game.Status;
-        /*
-        switch (game.Status){
-            case "waiting for player":
-                break;
-            case "ready":
-                break; 
-            case "play":
-                break; 
-            case "end":
-                break;
-            case "scoreboard":
-                break;
-            default:
-                break;
-        }*/
-        Render();
+
+        Render(ggee);
     }
 
     /// <summary>
@@ -186,13 +169,14 @@ public class ServerCommunication : MonoBehaviour
         client.Send(message);
     }
 
-    public void Render(){
+    public void Render(GameElement[] ggee){
         if (game == null){
             return;
         }
+
         logVisible = false;    
         RenderPlayer();    
-        RenderBullet();
+        //RenderBullet();
     }
 
     private void RenderPlayer(){
@@ -200,13 +184,29 @@ public class ServerCommunication : MonoBehaviour
         GameObject s;
         GameObject arrow;
         string pName;
-        string arrowPName;
+        
         TextMesh playerNameTextObject;
         TextMesh arrowNameTextObject; 
         TextMesh textObject;
         Transform skin;
 
-        for (int bi = 0; bi < game.Players.Length; bi++){        
+        foreach (var ge in ggee)
+        {
+            GameObject goge = GameObject.Find(ge.id);
+            Vector3 position = new Vector3(p.X,p.Y,0);
+            if (goge != null){
+                goge.transform.position = position;
+            }
+            switch(ge.type){
+                case PoyaisType.human:
+                    break;
+                case PoyaisType.tavern:
+                    break;                
+            }
+            
+        }
+
+        foreach (GameElement){        
             p = game.Players[bi];            
             pName = "ship_" + bi;
             s = GameObject.Find(pName);
