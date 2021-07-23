@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-
-public class GameElement {
+public class GameElement  : MonoBehaviour{
     public int id;
     public string name;
     public PoyaisType type;
@@ -13,14 +12,12 @@ public class GameElement {
     public float[] heading;
     
 
-    public Vector2 GetPosition(){
-        return new Vector2(this.position[0],this.position[1]);
-    }
 
-    public GameObject GenerateGameGameObject(GameObject Template, GameObject parent){
-        GameObject s = Instantiate(Ship,position,Quaternion.identity);   
-        s.name=this.name;
-        s.transform.parent = parent;
+
+    public static GameObject GenerateGameObject( GameObject template, GameObject parent, Vector3 pos,string name){
+        GameObject s = Instantiate(template, pos,Quaternion.identity);    
+        s.name=name;
+        s.transform.parent = parent.transform;
         return s;
     } 
 }

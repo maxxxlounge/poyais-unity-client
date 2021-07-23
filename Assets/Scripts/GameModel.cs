@@ -4,6 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 public class GameModel{
+    public GameElement[] game;
 
     public static GameElement[] CreateFromJSON(string jsonString)
     {
@@ -11,7 +12,11 @@ public class GameModel{
         GameElement[] ggee = JsonUtility.FromJson<GameElement[]>(jsonString);
         Debug.Log(ggee);
         return ggee;
+        
     }
 
+    public GameElement[] GetGameElements(){
+        return game;
+    }
 
 }

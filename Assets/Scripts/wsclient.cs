@@ -13,6 +13,7 @@ using UnityEngine;
 /// </summary>
 public class WsClient
 {
+    
     // WebSocket
     private ClientWebSocket ws = new ClientWebSocket();
     private UTF8Encoding encoder; // For websocket text message encoding.
